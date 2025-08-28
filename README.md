@@ -1,0 +1,63 @@
+# Caesar Cipher Project 
+
+A Python-based implementation of the classic Caesar Cipher encryption/decryption algorithm, with CLI support and brute-force attack mode.
+
+---
+
+## Features
+- Encrypt text with a shift value  
+- Decrypt text with a shift value  
+- Brute-force mode to crack unknown shifts  
+- Supports **file input/output**  
+- Case-insensitive input, but outputs in **uppercase**  
+- Supports file input/output (both in CLI & GUI)
+
+## Command-Line Interface (CLI)
+- Lightweight, scriptable, and testable
+- Ideal for automation or quick usage
+
+## Graphical User Interface (GUI)
+- Built with PySide6
+- User-friendly interface with input, output, and action buttons
+- File Load/Save support
+- Validates shift input (must be between 1–26)
+- Auto-centers on screen for a polished experience
+
+## Testing
+- CLI tests with pytest
+- GUI tests with pytest-qt
+
+---
+
+## Installation
+Clone the repository and install it in editable mode:
+
+```bash
+git clone https://github.com/markiv-proto/Caesar-Cipher.git
+cd caesar-cipher-project
+pip install -e .
+
+### Usage
+- Encrypt
+    caesar-cipher encrypt "SOFTWARE" --shift 3
+    # Output: VRIWZDUH
+
+    caesar-cipher decrypt "VRIWZDUH" --shift 3
+    # Output: SOFTWARE
+
+- Brute-force
+    caesar-cipher bruteforce "VRIWZDUH"
+    # Output:
+    # Shift  1: UQHVYCTG
+    # Shift  2: TPGUXBSF
+    # Shift  3: SOFTWARE ✅
+
+- File Input/Output
+    caesar-cipher encrypt --input input.txt --output encrypted.txt --shift 3
+
+- GUI
+    python -m caesar.gui
+
+- Running Tests
+    Use pytest to run the test suite:
+        pytest

@@ -1,0 +1,2 @@
+[console_scripts]
+caesar-cipher = caesar.cli:main

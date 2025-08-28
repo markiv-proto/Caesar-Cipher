@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "caesar-cipher-tool"
+version = "0.1.0"
+description = "A Caesar Cipher encryption/decryption tool with bruteforce attack mode"
+authors = [
+    { name="Your Name", email="you@example.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.scripts]
+caesar-cipher = "caesar.cli:main"
+

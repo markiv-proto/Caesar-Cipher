@@ -1,0 +1,7 @@
+# Core dependencies
+argparse
+PySide6
+
+# Development & Testing
+pytest
+pytest-qt
