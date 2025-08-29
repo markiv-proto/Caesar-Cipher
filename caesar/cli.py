@@ -14,7 +14,8 @@ def main():
     )
 
     parser.add_argument(
-        "--text",
+        "text",
+        nargs="?",
         help="The input text to process"
     )
 
