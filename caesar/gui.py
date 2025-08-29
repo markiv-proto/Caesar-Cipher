@@ -133,8 +133,11 @@ class CaesarGUI(QWidget):
             QMessageBox.information(self, "Saved", f"✅ Output saved to {file_path}")
 
 
-if __name__ == "__main__":
+def main():
     app = QApplication(sys.argv)
     window = CaesarGUI()
     window.show()
     sys.exit(app.exec())
+
+if __name__ == "__main__":
+    main()

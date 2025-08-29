@@ -1,2 +1,3 @@
 [console_scripts]
 caesar-cipher = caesar.cli:main
+caesar-gui = caesar.gui:main
